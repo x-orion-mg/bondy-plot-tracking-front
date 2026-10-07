@@ -1,0 +1,144 @@
+{
+    "regions": [
+        {
+            "id": "1",
+            "image": "/images/Photos.jpg",
+            "projectType": "Restauration de mangroves - 40ha",
+            "localisation": {
+                "pays": "Madagascar",
+                "region": "Faritra Diana",
+                "commune": "Andakalaka"
+            },
+            "startData": "Janvier 2023",
+            "status": "Ça pousse",
+            "marker": [
+                48.816377,
+                -13.683475
+            ],
+            "shapeName": "Diana",
+            "shapeID": "27540722B39676432794686",
+            "bounds": [
+                [
+                    47.8582154,
+                    -14.2653509
+                ],
+                [
+                    49.6664918,
+                    -11.9519693
+                ]
+            ]
+        },
+        {
+            "id": "2",
+            "image": "/images/Photos_1.jpg",
+            "projectType": "Restauration de mangroves - 40ha",
+            "localisation": {
+                "pays": "Madagascar",
+                "region": "Faritra Sava",
+                "commune": "Sava"
+            },
+            "startData": "Janvier 2023",
+            "status": "Ça pousse",
+            "marker": [
+                49.77465795,
+                -14.36782035
+            ],
+            "shapeName": "Sava",
+            "shapeID": "27540722B96967449701393",
+            "bounds": [
+                [
+                    49.0630606,
+                    -15.9968336
+                ],
+                [
+                    50.4862553,
+                    -12.7388071
+                ]
+            ]
+        },
+        {
+            "id": "3",
+            "image": "/images/Photos_2.jpg",
+            "projectType": "Restauration de mangroves - 40ha",
+            "localisation": {
+                "pays": "Madagascar",
+                "region": "Faritra Analanjirofo",
+                "commune": "Analanjirofo"
+            },
+            "startData": "Janvier 2023",
+            "status": "Ça pousse",
+            "marker": [
+                49.36777875,
+                -16.31627785
+            ],
+            "shapeName": "Analanjirofo",
+            "shapeID": "27540722B29762949035073",
+            "bounds": [
+                [
+                    48.6894569,
+                    -17.7518766
+                ],
+                [
+                    50.0461006,
+                    -14.8806791
+                ]
+            ]
+        },
+        {
+            "id": "4",
+            "image": "/images/Photos.jpg",
+            "projectType": "Restauration de mangroves - 40ha",
+            "localisation": {
+                "pays": "Madagascar",
+                "region": "Faritra Boeny",
+                "commune": "Amoron'i Mania"
+            },
+            "startData": "Janvier 2023",
+            "status": "Ça pousse",
+            "marker": [
+                46.75570675,
+                -20.45915905
+            ],
+            "shapeName": "Amoron'i Mania",
+            "shapeID": "27540722B26835460634378",
+            "bounds": [
+                [
+                    45.7500076,
+                    -21.0392287
+                ],
+                [
+                    47.7614059,
+                    -19.8790894
+                ]
+            ]
+        },
+        {
+            "id": "5",
+            "image": "/images/Photos_1.jpg",
+            "projectType": "Restauration de mangroves - 40ha",
+            "localisation": {
+                "pays": "Madagascar",
+                "region": "Faritra Vakinankaratra",
+                "commune": "Atsimo-Atsinanana"
+            },
+            "startData": "Janvier 2023",
+            "status": "Ça pousse",
+            "marker": [
+                46.08532245,
+                -22.63380155
+            ],
+            "shapeName": "Ihorombe",
+            "shapeID": "27540722B59079602855311",
+            "bounds": [
+                [
+                    44.9771423,
+                    -23.6433565
+                ],
+                [
+                    47.1935026,
+                    -21.6242466
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+@use "../../assets/scss/common/toRem" as *;
+
+
+.impactTable {
+  margin-bottom: 32px;
+
+  .impactTable_switch {
+    display: flex;
+    gap: clamp(10px, 40px, 40px);
+    margin-bottom: 8px;
+
+    .tab_btn {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20.8px;
+      text-align: left;
+      color: var(--tab-text-color);
+      cursor: pointer;
+      transition: color .3s ease;
+      padding: 9.5px 0;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+
+      &.active {
+        border-bottom: 2px solid var(--color-primary);
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .impactTable_element {
+    padding: 24px;
+    background-color: var(--impact-bg-color);
+
+    .element {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .value {
+      width: 200px;
+
+      .value_top {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 4px;
+
+        strong {
+          font-size: toRem(24px);
+          line-height: 28.8px;
+          letter-spacing: 0.05em;
+          color: var(--color-primary);
+        }
+      }
+
+      .value_bottom {
+        font-size: toRem(14px);
+        line-height: 18.2px;
+        color: var(--black);
+      }
+    }
+  }
+}

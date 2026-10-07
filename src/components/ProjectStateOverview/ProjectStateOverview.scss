@@ -1,0 +1,181 @@
+@use "../../assets/scss/common/toRem" as *;
+@use "../../assets/scss/common/mixins" as *;
+@use '../../assets/scss/common/breakpoint' as *;
+
+.projectStateOverview {
+    width: 100%;
+    height: 279px;
+    background-color: var(--white);
+    padding: 16px 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include max($mobile-max) {
+        height: 190px;
+    }
+
+    .project_select {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 24px;
+        align-self: flex-start;
+
+        .select_label {
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--tab-text-color);
+        }
+
+        .react-select__project__control {
+            background-color: transparent;
+            border: 1px solid var(--select-border-color);
+            box-shadow: none;
+            cursor: pointer;
+            padding: 0px 16px;
+            max-width: fit-content;
+            width: 100%;
+            border-radius: 0;
+
+            &:hover {
+                border-color: initial;
+
+                .react-select__project__single-value {
+                    color: var(--color-text);
+                }
+
+                .react-select__project__indicator svg {
+                    fill: var(--color-text);
+                }
+            }
+
+            .react-select__project__indicator svg {
+                fill: var(--color-text);
+                transition: transform 0.25s ease-in;
+            }
+        }
+
+        .react-select__project__value-container {
+            padding: 0;
+        }
+
+        .react-select__project__control--menu-is-open {
+            .react-select__project__indicator svg {
+                transform: rotate(-180deg);
+            }
+        }
+
+        input {
+            caret-color: transparent;
+        }
+
+        .react-select__project__single-value {
+            color: var(--color-text);
+            font-size: toRem(16px);
+            font-weight: 400;
+        }
+
+        .react-select__project__indicator-separator {
+            display: none;
+        }
+
+        .react-select__project__menu {
+            background: var(--white);
+            max-width: 284px;
+            width: 100%;
+            box-shadow: 0 4px 15px 0 #00000033;
+        }
+
+        .react-select__project__option {
+            color: var(--color-text);
+            background-color: transparent;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+
+        .react-select__project__option--is-selected {
+            background-color: transparent;
+            color: var(--color-primary);
+        }
+    }
+
+
+    .range_container {
+        width: 84.61%;
+
+        @include max($mobile-max) {
+            width: 100%;
+        }
+
+        .range_label_top {
+            margin-bottom: 28px;
+            display: flex;
+            justify-content: space-between;
+
+            font-weight: 700;
+            font-size: 14px;
+            color: #4D4E50;
+
+        }
+
+
+        .thumb_triangle {
+
+            &::before {
+                display: inline-block;
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 20px solid #D9D9D9;
+                transform: rotate(180deg);
+            }
+
+            .thumb_value {
+                position: absolute;
+                top: -30px;
+                left: -6px;
+
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 130%;
+                color: #4D4E50;
+            }
+        }
+
+        .range_label_bottom {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            margin-top: 28px;
+
+            div {
+                max-width: 120px;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 130%;
+                    color: #4D4E50;
+                }
+
+                span:first-child {
+                    font-weight: 700;
+                }
+
+                span:last-child {
+                    @include max($mobile-max) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

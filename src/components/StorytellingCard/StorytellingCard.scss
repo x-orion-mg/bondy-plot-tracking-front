@@ -1,0 +1,47 @@
+@use "../../assets/scss/common/toRem" as *;
+@use "../../assets/scss/common/mixins" as *;
+
+.storytellingCard {
+    width: toRem(466px);
+    border: 1px solid var(--card-sousProject-border-color);
+
+    @include max(526px) {
+        width: 100%;
+    }
+
+    .storytellingCard_wrapper {
+        padding: toRem(30px) toRem(34px);
+        padding-bottom: toRem(40px);
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: toRem(18px);
+        background-color: var(--color-primary);
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    }
+
+
+
+    .title-h3 {
+        margin-bottom: toRem(20px);
+    }
+
+    .storytellingCard_text {
+
+        p {
+            margin-bottom: 0;
+            min-height: 146px;
+        }
+
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        line-clamp: 7;
+        -webkit-box-orient: vertical;
+        text-align: justify;
+        margin-bottom: toRem(57px);
+    }
+}

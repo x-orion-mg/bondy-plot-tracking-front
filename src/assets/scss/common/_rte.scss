@@ -1,0 +1,101 @@
+@use "./toRem" as *;
+@use "./button" as *;
+
+.rte {
+    margin-bottom: 20px;
+    line-height: 1.3rem 20.8px;
+    color: var(--color-text);
+
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 16px;
+        font-size: toRem(16px);
+    }
+
+
+    p {
+        font-weight: 300;
+
+    }
+
+    img {
+        width: 100% !important;
+        height: 205px !important;
+        margin-bottom: 16px;
+        object-fit: cover;
+    }
+
+    video,
+    iframe {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 360px;
+        margin-bottom: 16px;
+        object-fit: cover;
+    }
+
+    ul,
+    ol {
+        margin: 0 0 1.5rem;
+        padding-left: 2.5rem;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    a {
+        color: var(--color-primary);
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &::after {
+            display: inline-block;
+            margin-left: 2px;
+            content: '\279A';
+        }
+    }
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        /*border: 1px solid var(--table-border-color);*/
+        border: none !important;
+        margin-bottom: 16px;
+
+        th,
+        td {
+            padding: 8px;
+            /*border: 1px solid var(--table-border-color);*/
+            border: none !important;
+        }
+
+        th {
+            text-align: left;
+            background-color: var(--color-primary);
+            color: var(--white);
+        }
+
+        td {
+            vertical-align: top;
+        }
+    }
+
+    button {
+        @extend .btn;
+    }
+
+}

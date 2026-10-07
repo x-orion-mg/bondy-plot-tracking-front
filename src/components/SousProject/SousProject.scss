@@ -1,0 +1,53 @@
+@use "../../assets/scss/common/toRem" as *;
+
+.sousProject {
+    .swiperProject {
+        margin-bottom: toRem(24px);
+    }
+
+    .swiperInfo {
+        display: flex;
+        gap: toRem(5px);
+        justify-content: center;
+        align-items: center;
+
+        .custom-prev,
+        .custom-next {
+            width: 20px;
+            height: 20px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .custom-prev {
+            transform: rotate(180deg);
+        }
+
+        .swiper-pagination-custom {
+            color: var(--swiper-pagination-color);
+
+            .swiper-pagination-current,
+            .swiper-pagination-total {
+                width: 20px;
+                height: 20px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                font-size: toRem(16px);
+            }
+
+            .swiper-pagination-current {
+                color: var(--color-secondary);
+            }
+        }
+    }
+
+    // override swiper style
+    .swiper-slide {
+        width: fit-content !important;
+    }
+}

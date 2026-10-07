@@ -1,0 +1,91 @@
+@use "../../assets/scss/common/toRem" as *;
+
+.region-filter {
+
+    display: grid;
+    grid-template-columns: 157px 1fr;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+
+    .region-filter-label {
+        font-size: toRem(16px);
+        line-height: 1.3;
+        color: var(--color-text);
+    }
+
+    .react-select__control {
+        background-color: transparent;
+        border: 1px solid var(--select-border-color);
+        box-shadow: none;
+        cursor: pointer;
+        padding: 7px 12px;
+        // min-width: toRem(284px);
+        max-width: 284px;
+        width: 100%;
+        border-radius: 0;
+
+        &:hover {
+            border-color: initial;
+
+            .react-select__single-value {
+                color: var(--color-text);
+            }
+
+            .react-select__indicator svg {
+                fill: var(--color-text);
+            }
+        }
+
+        .react-select__indicator svg {
+            fill: var(--color-text);
+            transition: transform 0.25s ease-in;
+        }
+    }
+
+    .react-select__value-container {
+        padding: 0;
+    }
+
+    .react-select__control--menu-is-open {
+        .react-select__indicator svg {
+            transform: rotate(-180deg);
+        }
+    }
+
+    input {
+        caret-color: transparent;
+    }
+
+    .react-select__single-value {
+        color: var(--color-text);
+        font-size: toRem(16px);
+        font-weight: 400;
+    }
+
+    .react-select__indicator-separator {
+        display: none;
+    }
+
+    .react-select__menu {
+        background: var(--white);
+        max-width: 284px;
+        width: 100%;
+        box-shadow: 0 4px 15px 0 #00000033;
+    }
+
+    .react-select__option {
+        color: var(--color-text);
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+
+    .react-select__option--is-selected {
+        background-color: transparent;
+        color: var(--color-primary);
+    }
+}

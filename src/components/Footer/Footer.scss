@@ -1,0 +1,33 @@
+.footer {
+  background: #333333;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 22px;
+
+  @media (max-width: 574px){
+    display: none;
+  }
+
+  p {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Quicksand", serif;
+  }
+}
+
+.dashboard {
+  .footer {
+    @media (max-width: 574px){
+      display: block;
+      height: auto;
+      padding: 8px;
+
+      p {
+        margin-bottom: 0;
+        text-align: center;
+      }
+    }
+  }
+}

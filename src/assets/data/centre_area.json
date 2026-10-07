@@ -1,0 +1,324 @@
+[
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Diana"
+        },
+        "geometry": {
+            "coordinates": [
+                49.03005822243969,
+                -13.483516831734576
+            ],
+            "type": "Point"
+        },
+        "id": 23
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Sava"
+        },
+        "geometry": {
+            "coordinates": [
+                49.78547285165044,
+                -14.2835711531378
+            ],
+            "type": "Point"
+        },
+        "id": 23
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Analanjirofo"
+        },
+        "geometry": {
+            "coordinates": [
+                49.4236886781961,
+                -16.441917775516785
+            ],
+            "type": "Point"
+        },
+        "id": 23
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Sofia"
+        },
+        "geometry": {
+            "coordinates": [
+                48.2796226116304,
+                -15.33798766583594
+            ],
+            "type": "Point"
+        },
+        "id": 23
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Boeny"
+        },
+        "geometry": {
+            "coordinates": [
+                46.27266708326505,
+                -16.319249653238302
+            ],
+            "type": "Point"
+        },
+        "id": 24
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Alaotra-Mangoro"
+        },
+        "geometry": {
+            "coordinates": [
+                48.40947232798999,
+                -17.794566870551378
+            ],
+            "type": "Point"
+        },
+        "id": 25
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Betsiboka"
+        },
+        "geometry": {
+            "coordinates": [
+                47.22460631325612,
+                -17.16822898090605
+            ],
+            "type": "Point"
+        },
+        "id": 29
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Melaky"
+        },
+        "geometry": {
+            "coordinates": [
+                44.81963015157365,
+                -17.50028696852108
+            ],
+            "type": "Point"
+        },
+        "id": 30
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Bongolava"
+        },
+        "geometry": {
+            "coordinates": [
+                46.16288461907092,
+                -18.53877907769018
+            ],
+            "type": "Point"
+        },
+        "id": 31
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Analamanga"
+        },
+        "geometry": {
+            "coordinates": [
+                47.48429609372721,
+                -18.36267016430078
+            ],
+            "type": "Point"
+        },
+        "id": 32
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Menabe"
+        },
+        "geometry": {
+            "coordinates": [
+                45.00527812257735,
+                -20.2179442935535
+            ],
+            "type": "Point"
+        },
+        "id": 33
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Itasy"
+        },
+        "geometry": {
+            "coordinates": [
+                46.914308422347744,
+                -19.029374285411976
+            ],
+            "type": "Point"
+        },
+        "id": 34
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Atsinanana"
+        },
+        "geometry": {
+            "coordinates": [
+                48.86790487930244,
+                -19.001441871183786
+            ],
+            "type": "Point"
+        },
+        "id": 35
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Vakinankaratra"
+        },
+        "geometry": {
+            "coordinates": [
+                46.88954914527835,
+                -19.71531442261184
+            ],
+            "type": "Point"
+        },
+        "id": 36
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Amoron'i Mania"
+        },
+        "geometry": {
+            "coordinates": [
+                46.69795577437185,
+                -20.517141026799848
+            ],
+            "type": "Point"
+        },
+        "id": 37
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Vatovavy"
+        },
+        "geometry": {
+            "coordinates": [
+                47.979048861707525,
+                -21.019028036054905
+            ],
+            "type": "Point"
+        },
+        "id": 38
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Matsiatra Ambony"
+        },
+        "geometry": {
+            "coordinates": [
+                46.56805706310331,
+                -21.42237809965785
+            ],
+            "type": "Point"
+        },
+        "id": 39
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Fitovinany"
+        },
+        "geometry": {
+            "coordinates": [
+                47.66737196658417,
+                -21.977639659801923
+            ],
+            "type": "Point"
+        },
+        "id": 40
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Ihorombe"
+        },
+        "geometry": {
+            "coordinates": [
+                46.18712689071191,
+                -22.402058714393817
+            ],
+            "type": "Point"
+        },
+        "id": 41
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Atsimo-Andrefana"
+        },
+        "geometry": {
+            "coordinates": [
+                44.368964158046566,
+                -23.184255666506914
+            ],
+            "type": "Point"
+        },
+        "id": 42
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Atsimo-Atsinanana"
+        },
+        "geometry": {
+            "coordinates": [
+                47.277841914411766,
+                -23.30358874036274
+            ],
+            "type": "Point"
+        },
+        "id": 43
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Anosy"
+        },
+        "geometry": {
+            "coordinates": [
+                46.15255623124139,
+                -23.961584214254543
+            ],
+            "type": "Point"
+        },
+        "id": 44
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Androy"
+        },
+        "geometry": {
+            "coordinates": [
+                45.45976112828606,
+                -24.734812774478897
+            ],
+            "type": "Point"
+        },
+        "id": 45
+    }
+]

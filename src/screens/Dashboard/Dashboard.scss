@@ -1,0 +1,106 @@
+@use "../../assets/scss/common/mixins" as *;
+@use '../../assets/scss/common/breakpoint' as *;
+
+@font-face {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/anton/v25/1Ptgg87LROyAm3Kz-C8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+.dashboard {
+    background-image: url("/images/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .dashboard_container {
+        max-width: 1360px;
+        padding: 0 20px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding-bottom: 48px;
+
+        @include max($mobile-max) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.popup_download {
+    position: fixed;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px 15px;
+    box-shadow: 1px 1px 20px 4px #27272785;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    display: none;
+
+    &.open {
+        display: block;
+    }
+
+    .title-h2 {
+        font-size: 20px;
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+
+    input[type=number] {
+        width: 100%;
+        padding: 12px 15px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        outline: none;
+        font-size: 14px;
+        color: var(--color-text);
+        margin-bottom: 30px;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        &[type=number] {
+            -moz-appearance: textfield;
+        }
+    }
+
+
+    .close-popup {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: 0;
+        padding: 5px;
+        cursor: pointer;
+        background-color: white;
+    }
+
+    .form label {
+        position: relative;
+
+        .error {
+            position: absolute;
+            bottom: -26px;
+            left: 4px;
+            font-size: 13px;
+            color: #F72B2A;
+        }
+    }
+}

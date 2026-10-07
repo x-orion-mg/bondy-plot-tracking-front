@@ -1,0 +1,157 @@
+@use "../../assets/scss/common/mixins" as *;
+
+.treeDetails_container {
+    max-width: 382px;
+    width: 100%;
+    height: fit-content;
+    border: 8px solid #ffffff99;
+    font-family: 'DM Sans';
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    @include maxH(765px){
+        top: 320px;
+    }
+    @include max(600px){
+        top: 390px;
+    }
+    @include maxHmaxW(600px, 1024px){
+        top: 290px;
+        height: 370px;
+        overflow: auto;
+    }
+
+    @include max(430px) {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95vw;
+    }
+    &.hide {
+        display: none !important;
+    }
+
+    &.show {
+        display: block !important;
+    }
+
+
+
+    .treeDetails_wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: var(--white);
+        min-width: 366px;
+
+        @include max(430px) {
+            min-width: 220px;
+        }
+
+        .owner {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 20px;
+            font-size: 18px;
+            color: var(--color-text);
+
+
+            .owner_image {
+                width: 50px;
+                height: 50px;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .tree_banner {
+            width: 100%;
+            height: 220px;
+
+            img {
+                object-fit: cover;
+            }
+            @include maxH(760px){
+                height: 140px;
+            }
+        }
+
+        .client_details {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--tab-text-color);
+            line-height: 20.8px;
+
+            &>div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .data_value {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: var(--card-dot-color);
+                }
+            }
+
+            .tree_species {
+                padding: 7px 5px;
+                border-radius: 4px;
+                background-color: var(--yellow_color);
+                color: var(--white);
+
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 1.4;
+
+                span:last-child {
+                    font-weight: 400;
+                }
+            }
+
+            .client_name .data_value {
+                color: var(--color-primary);
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+    }
+}
+
+.backToPage {
+    width: fit-content;
+    padding: 2px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 120px;
+    left: 20px;
+    z-index: 2;
+    background-color: var(--white);
+    @include max(600px){
+        top: 150px;
+    }
+    &:hover {
+
+        button,
+        svg {
+            color: var(--color-secondary);
+        }
+    }
+}

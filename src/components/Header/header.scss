@@ -1,0 +1,238 @@
+@use "../../assets/scss/common/toRem" as *;
+@use "../../assets/scss/common/mixins" as *;
+@use "../../assets/scss/common/breakpoint" as *;
+
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-bg-color);
+    box-shadow: 0 toRem(4px) toRem(15px) 0 #00000033;
+    height: 70px;
+
+    @include max($mobile-header) {
+      //height: auto;
+    }
+  }
+
+  .logo {
+    max-width: toRem(290.66px);
+    width: 100%;
+    height: auto;
+
+    @include max($tablet-portrait-min) {
+      max-width: toRem(176.67px);
+    }
+  }
+
+  .menu {
+    @include max($mobile-header) {
+      display: none;
+    }
+  }
+
+  // Menu
+  .menu-list {
+    display: flex;
+    align-items: center;
+    gap: toRem(33px);
+
+    .menu-link {
+      font-size: toRem(16px);
+      font-weight: 400;
+      color: var(--color-primary);
+      padding: toRem(21px) 0;
+      position: relative;
+
+      @include max($mobile-header) {
+        padding: toRem(11px) 0;
+      }
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: toRem(4px);
+        height: toRem(4px);
+        background: var(--color-primary);
+        border-radius: 50%;
+        position: absolute;
+        left: toRem(-10px);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &.active {
+        border-bottom: toRem(4px) solid var(--color-primary);
+      }
+    }
+  }
+
+
+  // Profile
+  .user,
+  .user .profile {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .user {
+    gap: toRem(22px);
+
+    @include max($mobile-header) {
+      display: none;
+    }
+
+    .profile {
+      display: flex;
+      gap: toRem(22px);
+
+      @include max($tablet) {
+        display: none;
+      }
+
+
+      .profile-name {
+        font-size: toRem(16px);
+        font-weight: 400;
+        color: var(--color-text);
+      }
+
+      .profile-icon {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+  }
+
+  // mobile hamburger
+  .menu-burger {
+    display: none;
+    color: var(--color-text);
+    padding: toRem(5px) toRem(10px);
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+    @include max($mobile-header) {
+      display: inline-flex;
+    }
+  }
+
+}
+
+// mobile menu
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  right: toRem(-362px);
+  max-width: toRem(360px);
+  width: 100%;
+  height: 100vh;
+  z-index: 150;
+  background-color: var(--white);
+  transition: var(--transition);
+
+  &.open {
+    right: 0;
+  }
+
+  .menu-close {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: toRem(20px);
+    right: toRem(14px);
+    padding: toRem(5.41px);
+  }
+
+  .menu-mobile-container {
+    width: 100%;
+    height: 100%;
+    padding: toRem(69px) toRem(14px) toRem(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: toRem(11px);
+    gap: toRem(63px);
+
+    .menu-link {
+      font-size: toRem(16px);
+      font-weight: 400;
+      color: var(--color-primary);
+      padding: toRem(24.5px) 0;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: toRem(4px);
+        height: toRem(4px);
+        background: var(--color-primary);
+        border-radius: 50%;
+        position: absolute;
+        left: toRem(-10px);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &.active {
+        border-bottom: toRem(4px) solid var(--color-primary);
+      }
+    }
+  }
+
+
+  // Profile
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile {
+    display: flex;
+    gap: toRem(22px);
+
+    .profile-name {
+      font-size: toRem(16px);
+      font-weight: 400;
+      color: var(--color-text);
+    }
+
+    .profile-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+    .language {
+      width: fit-content;
+    }
+  }
+
+
+}
+
+.no-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.broken-image-icon {
+  display: block;
+  margin: auto;
+}

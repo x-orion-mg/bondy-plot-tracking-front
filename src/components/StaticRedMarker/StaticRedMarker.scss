@@ -1,0 +1,21 @@
+.static-red-marker {
+  position: relative;
+  width: 56px;
+  height: 44px;
+
+  .red-house {
+    display: block;
+    position: absolute;
+    width: 56px;
+  }
+
+  .red-house-icon {
+    width: 29px;
+    height: 26px;
+    position: absolute;
+    top: calc(50% + 2px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
+}

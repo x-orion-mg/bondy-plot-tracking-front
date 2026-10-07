@@ -1,0 +1,53 @@
+@use "../../assets/scss/common/mixins" as *;
+@use '../../assets/scss/common/breakpoint' as *;
+
+.carbonSequestration {
+    width: 100%;
+    height: 279px;
+    background-color: var(--white);
+    padding: 11px 21px;
+
+    .title-h2 {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--tab-text-color);
+    }
+
+    sub {
+        vertical-align: sub;
+        font-size: smaller;
+    }
+
+    .chart_container {
+        height: 200px;
+        display: flex;
+        align-items: end;
+        position: relative;
+    }
+
+    .legend {
+        position: absolute;
+        font-weight: 300;
+        font-size: 14px;
+        color: var(--color-text);
+
+        &.x {
+            top: 0;
+        }
+
+        &.y {
+            right: 0;
+        }
+    }
+
+    .chart_wrapper {
+        display: flex;
+        align-items: end;
+        width: 93%;
+        height: 140px;
+
+        @include max($mobile-max) {
+            width: 100%;
+        }
+    }
+}

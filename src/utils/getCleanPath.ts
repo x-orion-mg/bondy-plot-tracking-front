@@ -1,0 +1,1 @@
+export const getCleanPath = (path: string) => path.replace(/\/+$/, '');

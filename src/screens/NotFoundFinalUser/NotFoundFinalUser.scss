@@ -1,0 +1,5 @@
+.not-found.full-height {
+    @media (max-width: 768px) {
+        min-height: calc(100vh - 57.59px);
+    }
+}

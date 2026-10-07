@@ -1,0 +1,15 @@
+@use "../../assets/scss/common/mixins" as *;
+@use "../../assets/scss/common/breakpoint" as *;
+
+.map {
+    width: 100%;
+    height: calc(100% - 22px);
+
+    @include max($mobile-max) {
+        height: calc(100vh - 122px);
+    }
+
+    @media  (max-width: 574px){
+        height: 100%;
+    }
+}

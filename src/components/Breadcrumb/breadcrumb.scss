@@ -1,0 +1,52 @@
+@use "../../assets/scss/common/toRem" as *;
+@use "../../assets/scss/common/mixins" as *;
+@use "../../assets/scss/common/breakpoint" as *;
+
+.breadcrumb {
+  background-color: var(--breadcrumb-bg-color);
+  position: sticky;
+  top: 70px;
+  height: 100%;
+  min-height: 30px;
+  overflow: hidden;
+
+  @include max($mobile-header) {
+    top: 50px;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .header-container,
+  .breadcrumb-list {
+    height: 100%;
+    min-height: 30px;
+  }
+
+  .breadcrumb-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: fit-content;
+
+    .breadcrumb-link {
+      font-size: toRem(14px);
+      font-weight: 400;
+      color: var(--color-text);
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+
+      &:hover,
+      &.active {
+        color: var(--color-secondary);
+      }
+    }
+  }
+
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

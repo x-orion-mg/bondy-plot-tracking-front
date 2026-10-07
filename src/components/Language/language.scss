@@ -1,0 +1,30 @@
+@use "../../assets/scss/common/toRem" as *;
+
+
+.language {
+    width: fit-content;
+
+    #google_translate_element {
+        width: 57px;
+        height: 38px;
+
+        .goog-te-gadget,
+        .goog-te-gadget-simple {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .goog-te-gadget-simple {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a[aria-haspopup="true"] {
+            &>span:first-child {
+                display: none;
+            }
+        }
+    }
+}

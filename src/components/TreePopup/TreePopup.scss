@@ -1,0 +1,102 @@
+@use "../../assets/scss/common/breakpoint" as *;
+@use "../../assets/scss/common/mixins" as *;
+
+
+
+.mapboxgl-popup {
+    max-width: 539px !important;
+
+    .mapboxgl-popup-content {
+        border-radius: 0px !important;
+        padding: 0px !important;
+        background: transparent;
+    }
+}
+
+.mapboxgl-marker {
+    cursor: pointer;
+}
+
+.treePopup_container {
+    max-width: 539px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 29.8% 70.2%;
+    border: 3px solid #FFFFFF99;
+    background-color: var(--white);
+    font-family: 'DM Sans';
+
+    @include max($mobile-header) {
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+    }
+
+    .left,
+    .left picture {
+        width: 100%;
+        height: 100%;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .right {
+        padding: 21px 20px;
+
+        .right_wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .tree_code,
+        .tree_species,
+        .tree_usage,
+        .tree_coordonnate {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+
+            .data_title {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 1.3;
+                color: var(--tab-text-color);
+            }
+
+            .data_value {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 1.4;
+                color: var(--card-dot-color);
+                text-align: left;
+            }
+        }
+
+        .tree_species {
+            padding: 7px 5px;
+            border-radius: 4px;
+            background-color: var(--yellow_color);
+            color: var(--white);
+
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 1.4;
+
+            span:last-child {
+                font-weight: 400;
+            }
+        }
+
+        .tree_coordonnate {
+            margin-bottom: 12px;
+        }
+
+        .custom_btn {
+            align-self: center;
+        }
+    }
+}

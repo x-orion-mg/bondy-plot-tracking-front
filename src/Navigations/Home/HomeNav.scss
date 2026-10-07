@@ -1,0 +1,7 @@
+@use "../../assets/scss/common/toRem" as *;
+
+.regionsList {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(24px);
+}
